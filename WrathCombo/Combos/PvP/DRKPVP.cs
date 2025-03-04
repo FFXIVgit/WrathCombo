@@ -55,7 +55,7 @@ namespace WrathCombo.Combos.PvP
                                 return OriginalHook(Plunge);
                         }
 
-                        if (IsEnabled(CustomComboPreset.DRKPvP_Scorn) && HasEffect(Buffs.Scorn))
+                        if (IsEnabled(CustomComboPreset.DRKPvP_Scorn) && ActionReady(Eventide))
                             return OriginalHook(Eventide);
 
                         if (canWeave)
